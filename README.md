@@ -5,10 +5,10 @@ A YouTube downloader for iOS and macOS with a Python backend for full quality su
 ## Screenshots
 
 <p float="left">
-  <img src="docs/screenshots/search.png" width="22%" />
-  <img src="docs/screenshots/quality-picker.png" width="22%" />
-  <img src="docs/screenshots/downloading.png" width="22%" />
-  <img src="docs/screenshots/completed.png" width="22%" />
+  <img src="docs/screenshots/search.png" width="200" />
+  <img src="docs/screenshots/quality-picker.png" width="200" />
+  <img src="docs/screenshots/downloading.png" width="200" />
+  <img src="docs/screenshots/completed.png" width="200" />
 </p>
 
 ## Structure
