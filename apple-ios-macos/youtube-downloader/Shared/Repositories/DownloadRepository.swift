@@ -13,6 +13,6 @@ struct DownloadProgress {
 
 @MainActor
 protocol DownloadRepository {
-    func startDownload(id: UUID, from url: URL, fileExtension: String) -> AsyncThrowingStream<DownloadProgress, Error>
+    func startDownload(id: UUID, from url: URL, fileExtension: String, formatID: String?) -> AsyncThrowingStream<DownloadProgress, Error>
     func cancelDownload(id: UUID)
 }

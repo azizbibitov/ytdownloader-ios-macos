@@ -47,7 +47,7 @@ final class URLSessionDownloadRepository: DownloadRepository {
         self.storageRepository = storageRepository
     }
 
-    func startDownload(id: UUID, from url: URL, fileExtension: String) -> AsyncThrowingStream<DownloadProgress, Error> {
+    func startDownload(id: UUID, from url: URL, fileExtension: String, formatID: String?) -> AsyncThrowingStream<DownloadProgress, Error> {
         let (stream, continuation) = AsyncThrowingStream<DownloadProgress, Error>.makeStream()
 
         let destination = storageRepository.localFileURL(for: id, fileExtension: fileExtension)

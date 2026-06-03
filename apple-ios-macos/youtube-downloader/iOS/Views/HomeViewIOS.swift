@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct HomeViewIOS: View {
-    @State private var viewModel = HomeViewModel(videoRepository: YouTubeVideoRepository())
+    @State private var viewModel = HomeViewModel(videoRepository: BackendVideoRepository())
     @Environment(DownloadsViewModel.self) private var downloadsViewModel
 
     var body: some View {

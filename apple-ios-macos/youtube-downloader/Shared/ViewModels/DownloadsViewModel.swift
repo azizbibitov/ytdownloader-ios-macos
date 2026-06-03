@@ -38,7 +38,7 @@ final class DownloadsViewModel {
 
         Task {
             do {
-                for try await progress in downloadRepository.startDownload(id: item.id, from: quality.streamURL, fileExtension: quality.fileExtension) {
+                for try await progress in downloadRepository.startDownload(id: item.id, from: quality.streamURL, fileExtension: quality.fileExtension, formatID: quality.id) {
                     update(id: item.id, progress: progress.fraction, localURL: progress.localURL)
                 }
                 complete(id: item.id)
